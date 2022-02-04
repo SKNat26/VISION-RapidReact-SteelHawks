@@ -1,3 +1,3 @@
 # VISION-RapidReact-SteelHawks
 Vision project using openCV to assist robot in 2022 FRC Rapid React.
-I am using opencv to detect objects in the game field. So far this consists of detecting the red and blue cargo (balls). For this I used hsv masks to mask out all colors except red or blue. Then I used canny to take the contours of the image. Different blurs, dilations, and morphological functions were used to reduce as much noise as possible. Circle detection...
+Uses openCV to detect dfferent objects and return its data.
