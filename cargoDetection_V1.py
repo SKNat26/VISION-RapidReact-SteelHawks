@@ -10,7 +10,7 @@ from cv2 import bitwise_and
 import numpy as np
 import json
 
-f = open("values.json")
+f = open("data_V1.json")
 data = json.load(f)
 
 def findContours(bw):    
