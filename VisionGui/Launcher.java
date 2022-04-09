@@ -10,8 +10,9 @@ public class Launcher{
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run(){
-                Menu control = new Menu(500,500);
-                control.show();
+                Menu menubar = new Menu(100,100);
+                MainWindow gui = new MainWindow(500,500, menubar);
+                gui.show();
             }
         });
     }
