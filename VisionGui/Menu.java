@@ -1,0 +1,28 @@
+package VisionGui;
+
+import javax.swing.*;
+
+public class Menu {
+    private JMenu menu;
+    private JButton redBall;
+    private JButton blueBall;
+    private int sizeX;
+    private int sizeY;
+    
+    public Menu(int sizeX,int sizeY) {
+        this.sizeX = sizeX;
+        this.sizeY = sizeY;
+
+        redBall = new JButton("Detect Red Ball");
+        blueBall = new JButton("Detect Blue Ball");
+
+        menu = new JMenu("VISION");
+        menu.add(redBall);
+        menu.add(blueBall);
+        menu.setSize(this.sizeX, this.sizeY);
+    }
+
+    public void show() {
+        menu.setVisible(true);
+    }
+}
