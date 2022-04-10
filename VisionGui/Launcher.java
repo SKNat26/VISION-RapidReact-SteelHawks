@@ -1,7 +1,6 @@
 package VisionGui;
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.*;
 
 public class Launcher{
     
@@ -11,7 +10,8 @@ public class Launcher{
             @Override
             public void run(){
                 Menu menubar = new Menu(100,100);
-                MainWindow gui = new MainWindow(500,500, menubar);
+                Background background = new Background();
+                MainWindow gui = new MainWindow(500,500, menubar, background);
                 gui.show();
             }
         });

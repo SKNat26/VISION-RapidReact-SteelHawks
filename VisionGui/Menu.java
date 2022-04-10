@@ -5,8 +5,8 @@ import javax.swing.*;
 public class Menu {
     private JMenuBar mb;
     private JMenu menu;
-    private JButton redBall;
-    private JButton blueBall;
+    private JMenuItem redBall;
+    private JMenuItem blueBall;
     private int sizeX;
     private int sizeY;
     
@@ -14,16 +14,16 @@ public class Menu {
         this.sizeX = sizeX;
         this.sizeY = sizeY;
 
-        redBall = new JButton("Detect Red Ball");
-        blueBall = new JButton("Detect Blue Ball");
+        redBall = new JMenuItem("Detect Red Ball");
+        blueBall = new JMenuItem("Detect Blue Ball");
 
+        mb = new JMenuBar();
         menu = new JMenu("Select Operation");
+        mb.add(menu);
         menu.add(redBall);
         menu.add(blueBall);
         menu.setSize(this.sizeX, this.sizeY);
 
-        mb = new JMenuBar();
-        mb.add(menu);
     }
 
     public void show() {
